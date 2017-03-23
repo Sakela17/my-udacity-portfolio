@@ -1,0 +1,165 @@
+.container {
+    font-family: 'Work Sans', sans-serif;
+    color:#2d3c49;
+}
+
+
+/* === HEADER === */
+
+header {
+    margin-top: 1.2%;
+}
+
+.header-picture-wrap {
+    padding-top: 0.9%;
+}
+
+.img-logo {
+    max-height: 38px;
+    padding-bottom: 5%;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1rem;
+    padding-top: 1%;
+    margin: auto;
+}
+
+
+/* === MAIN SECTION === */
+
+.main-section-img {
+    max-height: 100px;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.main-section-heading {
+    font-size: 2.4rem;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin: auto;
+    text-align: center;
+    color: #a5b2bd;
+}
+
+.main-section-prj-container {
+    text-align: center;
+}
+
+ .project-img {
+     height: 200px;
+     margin: auto;
+ }
+
+ .project-img-caption {
+     font-size: 2rem;
+     font-weight: 500;
+     text-transform: uppercase;
+ }
+
+
+ /* === FOOTER === */
+
+footer {
+    font-size: 0.9rem;
+    margin-bottom: 1.2%;
+}
+
+footer p {
+    margin: auto;
+}
+
+
+/* === HORIZONTAL LINES === */
+
+.top-hr-line {
+    border: 2px solid #7d97ad;
+    margin: 2% 0 2% 0;
+}
+
+.bottom-hr-line {
+    border: 2px solid #7d97ad;
+    margin: 2% 0 0.5% 0;
+}
+
+
+/* === MEDIA QUERIES === */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .img-logo {
+        max-height: 55px;
+        padding-bottom: 3%;
+    }
+
+    .main-section-img {
+        max-height: 300px;
+    }
+
+    .main-section-heading {
+        font-size: 3rem;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .img-logo {
+        max-height: 60px;
+        padding-bottom: 2%;
+    }
+
+    .project-img-caption {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-logo {
+        padding-bottom: 1%;
+    }
+
+    .main-section-img {
+        max-height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .project-img {
+        height: 350px;
+    }
+
+    .project-img-caption {
+        font-size: 3rem;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+}
