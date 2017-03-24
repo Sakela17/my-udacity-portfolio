@@ -1,6 +1,6 @@
 .container {
-    font-family: 'Work Sans', sans-serif;
-    color:#2d3c49;
+    font-family: "Work Sans", sans-serif;
+    color: #2d3c49;
 }
 
 
@@ -80,12 +80,14 @@ footer p {
 /* === HORIZONTAL LINES === */
 
 .top-hr-line {
-    border: 2px solid #7d97ad;
+    border: 1px solid #7d97ad;
+    min-height: 0;
     margin: 2% 0 2% 0;
 }
 
 .bottom-hr-line {
-    border: 2px solid #7d97ad;
+    border: 1px solid #7d97ad;
+    min-height: 0;
     margin: 2% 0 0.5% 0;
 }
 
@@ -118,6 +120,10 @@ footer p {
 
     footer {
         font-size: 1.1rem;
+    }
+
+    .top-hr-line, .bottom-hr-line {
+        border-width: 2px;
     }
 }
 
