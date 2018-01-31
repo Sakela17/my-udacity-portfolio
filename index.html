@@ -6,149 +6,92 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio Test</title>
+        <meta name="pinterest" content="nopin" />
+        <meta name="description" content="Marina Valiquette is a beginner front-end web developer.">
+        <title>Marina Valiquette's Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
-        <script async src="bootstrap/js/jquery-3.1.1.js"></script>
-        <script async src="bootstrap/js/bootstrap.min.js"></script>
+
     </head>
 
-    <body>
+    <body class="container-fluid">
 
-        <div class="container">
-            <header class="row">
-                <figure class="col-xs-3 header-picture-wrap">
-                    <img class="img-responsive img-logo" src="images/udacity-logo.svg" alt="udacity logo"/>
-                </figure>
-
-                <div class="col-xs-9 text-right text-uppercase">
-                    <h1>marina valiquette</h1>
-                    <h3>front-end developer</h3>
-                </div>
-            </header>
-            <!---End Header-->
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <hr class="top-hr-line">
-                </div>
+        <section class="row vertical-align page-header-wrapper text-uppercase">
+            <div class="col-xs text-uppercase" id="banner-area">
+                <h1>marina valiquette</h1>
+                <h3>junior front-end developer</h3>
+                <!--<img class="img-responsive main-section-img" src="images/man-build-wp.svg" alt="man building web page"/>-->
             </div>
-            <!---End Horizontal Line-->
+        </section>
+        <!---End Banner Section-->
 
-            <main class="row">
-                <figure class="col-xs-12">
-                    <img class="img-responsive main-section-img" src="images/man-build-wp.svg" alt="man building web page"/>
-                </figure>
-
-                <h2 class="col-xs-12 main-section-heading">Featured Work</h2>
-
-                <div class="col-xs-12 col-sm-4 col-md-4 main-section-prj-container">
-                    <figure>
-                        <img class="img-responsive project-img" src="images/rwd.svg" alt="devices" data-toggle="modal" data-target="#project1"/>
-                        <figcaption class="project-img-caption">responsive design</figcaption>
-
-                    </figure>
-                    <p>This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda.</p>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4 main-section-prj-container">
-                    <figure>
-                        <img class="img-responsive  project-img" src="images/portfolio.svg" alt="portfolio" data-toggle="modal" data-target="#project2"/>
-                        <figcaption class="project-img-caption">portfolio</figcaption>
-                    </figure>
-                    <p>This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda.</p>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4 main-section-prj-container">
-                    <figure>
-                        <img class="img-responsive project-img" src="images/udacity-resume-crop.png" alt="resume" data-toggle="modal" data-target="#project3"/>
-                        <figcaption class="project-img-caption">online resumé</figcaption>
-                    </figure>
-                    <p>This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda.</p>
-                </div>
-            </main>
-            <!---End Main Section-->
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <hr class="bottom-hr-line">
-                </div>
-            </div>
-            <!---End Horizontal Line-->
-
-            <footer class="row">
-                <p class="col-xs-12">Image for this page designed by
-                    <a href="http://www.freepik.com/free-vector/great-isometric-user-experience_851898.htm" title="Freepik" target="_blank">
-                        Freepik</a></p>
-
-                <p class="col-xs-12">Image for 'Responsive Design' project designed by
-                    <a href="http://www.freepik.com/free-vector/responsive-web-design-flat-graphics_717976.htm"
-                    title="Freepik" target="_blank">
-                        Freepik</a></p>
-
-                <p class="col-xs-12">Image for 'Portfolio' project designed by
-                    <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>
-                    from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a>
-                    is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
-                    CC 3.0 BY</a></p>
-            </footer>
-            <!---End Footer-->
-
-            <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel1">First Project</h4>
-                        </div>
-                        <div class="modal-body">
-                            <img class="img-responsive" src="images/rwd.svg" alt="devices">
-                            This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+        <section class="row" id="main">
+            <h2 class="col-xs" id="main-header">projects</h2>
+            <div class="col-xs" id="main-header-bar"></div>
+            <div class="row" id="gallery">
+                <div class="col-xs-12 col-sm-4 gallery-card-holder">
+                    <div class="gallery-img-holder">
+                        <img class="img-responsive gallery-img" src="images/map.png" alt="devices" data-toggle="modal" data-target="#project1"/>
                     </div>
+                    <p class="gallery-img-caption">Neighborhood Map</p>
+                    <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">Demo</a>
+                    <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">GitHub</a>
+                    <!--<div class="gallery-bar"></div>-->
+                    <p class="gallery-text">Features KnockouJS, third-party API implementations, RWD.</p>
                 </div>
-            </div>
 
-            <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel2">Second Project</h4>
-                        </div>
-                        <div class="modal-body">
-                            <img class="img-responsive" src="images/portfolio.svg" alt="portfolio">
-                            This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                <div class="col-xs-12 col-sm-4 gallery-card-holder">
+                    <div class="gallery-img-holder">
+                        <img class="img-responsive  gallery-img" src="images/frogger_cropped.png" alt="frogger game" data-toggle="modal" data-target="#project2"/>
                     </div>
+                    <p class="gallery-img-caption">arcade game clone</p>
+                    <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-arcade-game/" role="button" target="_blank">Play</a>
+                    <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-arcade-game" role="button" target="_blank">GitHub</a>
+                    <!--<div class="gallery-bar"></div>-->
+                    <p class="gallery-text">Features HTML5 Canvas.</p>
                 </div>
-            </div>
 
-            <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel3">Third Project</h4>
-                        </div>
-                        <div class="modal-body">
-                            <img class="img-responsive" src="images/udacity-resume.png" alt="resume">
-                            This is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                <div class="col-xs-12 col-sm-4 gallery-card-holder">
+                    <div class="gallery-img-holder">
+                        <img class="img-responsive gallery-img" src="images/webperf.png" alt="resume" data-toggle="modal" data-target="#project3"/>
                     </div>
+                    <p class="gallery-img-caption">web performance</p>
+                    <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html" role="button" target="_blank">Play</a>
+                    <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-mobile-portfolio" role="button" target="_blank">GitHub</a>
+                    <!--<div class="gallery-bar"></div>-->
+                    <p class="gallery-text">Features web optimization techniques.</p>
                 </div>
             </div>
-            <!---End Modal-->
+        </section>
+        <!---End Main Section-->
 
+        <div class="row bottom-hr-line">
+            <div class="col-xs-12">
+                <hr class="">
+            </div>
         </div>
+        <!---End Horizontal Line-->
 
+        <footer class="row">
+            <!--<p class="col-xs-12">Image for this page designed by-->
+                <!--<a href="http://www.freepik.com/free-vector/great-isometric-user-experience_851898.htm" title="Freepik" target="_blank">-->
+                    <!--Freepik</a></p>-->
+
+            <!--<p class="col-xs-12">Image for 'Responsive Design' project designed by-->
+                <!--<a href="http://www.freepik.com/free-vector/responsive-web-design-flat-graphics_717976.htm"-->
+                <!--title="Freepik" target="_blank">-->
+                    <!--Freepik</a></p>-->
+
+            <!--<p class="col-xs-12">Image for 'Portfolio' project designed by-->
+                <!--<a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>-->
+                <!--from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a>-->
+                <!--is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">-->
+                <!--CC 3.0 BY</a></p>-->
+        </footer>
+        <!---End Footer-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
-
 </html>
