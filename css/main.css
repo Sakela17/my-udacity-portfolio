@@ -17,18 +17,20 @@
 /* === HEADER === */
 
 .page-header-wrapper {
-    max-height: 175px;
+    height: 30vh;
     /*min-height: 275px;*/
-    background: lightblue;
-    /*background-image: url("../images/DSC05073.JPG");*/
-    background-size: 100% 100%;
+    background: #8f8f8f;
+    background-image: url("../images/mar_val_web.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
     /*background-size: 772px 276px;*/
     /*text-align: left;*/
 
 }
 
 #banner-area {
-    padding: 70px 0 70px 25px;
+    padding: 20px 0 70px 15px;
     /*font-weight: 400;*/
     /*padding-top: 80px;*/
     /*padding-bottom: 80px;*/
@@ -41,6 +43,7 @@
 
 h1 {
     font-size: 25px;
+    text-shadow: 1px 1px 1px #FFFDE8;
     /*font-weight: 300;*/
 
 }
@@ -48,6 +51,7 @@ h1 {
 h3 {
     font-size: 15px;
     padding-top: 1%;
+    text-shadow: 1px 1px 1px #FFFDE8;
     /*margin: auto;*/
 }
 /*#banner-area {*/
@@ -100,7 +104,7 @@ h3 {
     margin: 2% 45% 5% 45%;
     width: 10%;
     height: 3px;
-    background: #000000;;
+    background: #2d3c49;
 }
 
 #gallery {
@@ -185,7 +189,7 @@ footer p {
 /*}*/
 
 .bottom-hr-line hr:only-child {
-    border: 1px solid #000000;
+    border: 1px solid #2d3c49;
     min-height: 0;
     margin: 2% 0 0.5% 0;
 }
@@ -195,7 +199,15 @@ footer p {
 
 @media screen and (min-width: 600px) {
     .page-header-wrapper {
-        /*background-image: url("../images/DSC05073.JPG");*/
+        background-image: url("../images/DSC00595-2.jpg");
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
     }
 }
 
