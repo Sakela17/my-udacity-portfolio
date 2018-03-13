@@ -1,5 +1,5 @@
 .container-fluid {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #2d3c49;
     padding-right: 0;
     padding-left: 0;
@@ -19,31 +19,31 @@
 .page-header-wrapper {
     height: 30vh;
     /*min-height: 275px;*/
-    background: #8f8f8f;
-    background-image: url("../images/mar_val_web.jpg");
+    background: #000000;
+    background-image: url("../images/sakelari4.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: left center;
     /*background-size: 772px 276px;*/
     /*text-align: left;*/
 
 }
 
 #banner-area {
-    padding: 20px 0 70px 15px;
-    /*font-weight: 400;*/
-    /*padding-top: 80px;*/
-    /*padding-bottom: 80px;*/
+    padding: 35px 20px 0 0;
+    float: right;
+    margin: 0 auto;
 }
 
 #banner-area > * {
     margin: auto;
+    color: white;
 
 }
 
 h1 {
-    font-size: 25px;
-    text-shadow: 1px 1px 1px #FFFDE8;
+    font-size: 20px;
+    /*text-shadow: 1px 1px 1px #FFFDE8;*/
     /*font-weight: 300;*/
 
 }
@@ -51,7 +51,8 @@ h1 {
 h3 {
     font-size: 15px;
     padding-top: 1%;
-    text-shadow: 1px 1px 1px #FFFDE8;
+    /*text-shadow: 1px 1px 1px #FFFDE8;*/
+    text-align: right;
     /*margin: auto;*/
 }
 /*#banner-area {*/
@@ -150,6 +151,10 @@ h3 {
     margin: 0;
 }
 
+.gallery-text {
+    margin-top: 5px;
+}
+
 .btn {
     border-radius: 0;
     border: 0;
@@ -199,7 +204,7 @@ footer p {
 
 @media screen and (min-width: 600px) {
     .page-header-wrapper {
-        background-image: url("../images/DSC00595-2.jpg");
+        background-image: url("../images/sakelari4.jpg");
     }
 
     h1 {
