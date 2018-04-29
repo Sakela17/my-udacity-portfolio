@@ -7,11 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="pinterest" content="nopin" />
-        <meta name="description" content="Marina Valiquette is a junior front-end web developer.">
+        <meta name="description" content="Marina Valiquette - Web Developer">
         <title>Marina Valiquette's Portfolio</title>
-         <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
 
@@ -19,74 +18,86 @@
 
         <section class="row vertical-align page-header-wrapper">
             <div class="col-xs" id="banner-area">
-                <h1 class="text-uppercase">Marina Valiquette</h1>
-                <h3>Front-End Developer</h3>
+                <h1>Marina Valiquette</h1>
+                <h2>Web Developer</h2>
             </div>
         </section>
         <!--- End Banner Section -->
 
         <section class="row" id="main">
-            <h2 class="col-xs" id="main-header">projects</h2>
+            <h3 class="col-xs" id="main-header">projects</h3>
             <div class="col-xs" id="main-header-bar"></div>
             <div class="row" id="gallery">
-                <div class="col-xs-12 col-sm-4 gallery-card-holder">
-                    <div class="gallery-img-holder">
-                        <img class="img-responsive gallery-img" src="images/map.png" alt="devices" data-toggle="modal" data-target="#project1"/>
-                    </div>
-                    <p class="gallery-img-caption">Neighborhood Map</p>
-                    <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">Demo</a>
-                    <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">GitHub</a>
-                    <!--<div class="gallery-bar"></div>-->
-                    <p class="gallery-text">Features KnockouJS, third-party API implementations, RWD.</p>
-                </div>
 
-                <div class="col-xs-12 col-sm-4 gallery-card-holder">
-                    <div class="gallery-img-holder">
-                        <img class="img-responsive  gallery-img" src="images/frogger_cropped.png" alt="frogger game" data-toggle="modal" data-target="#project2"/>
-                    </div>
-                    <p class="gallery-img-caption">arcade game clone</p>
-                    <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-arcade-game/" role="button" target="_blank">Play</a>
-                    <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-arcade-game" role="button" target="_blank">GitHub</a>
-                    <!--<div class="gallery-bar"></div>-->
-                    <p class="gallery-text">Features HTML5 Canvas.</p>
-                </div>
+                <article>
+                    <h4 class="article-title">
+                        Neighborhood Map
+                    </h4>
+                    <div class="article-text">
+                        <p>KnockoutJS, ES6 Promises</p>
+                        <p>
+                            This single-page application makes about 100 async requests to the third-party API's on the page load. The biggest challenge for me was to create a stack that would make as many concurrent calls as possible. As a result, the page loading speed and rendering were optimized to allow for a better UX.
 
-                <div class="col-xs-12 col-sm-4 gallery-card-holder">
-                    <div class="gallery-img-holder">
-                        <img class="img-responsive gallery-img" src="images/webperf.png" alt="resume" data-toggle="modal" data-target="#project3"/>
+                        </p>
+                        <p>
+                            2017
+                        </p>
                     </div>
-                    <p class="gallery-img-caption">web performance</p>
-                    <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html" role="button" target="_blank">Play</a>
-                    <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-mobile-portfolio" role="button" target="_blank">GitHub</a>
-                    <!--<div class="gallery-bar"></div>-->
-                    <p class="gallery-text">Features web optimization techniques.</p>
-                </div>
+                    <div class="article-img-holder">
+                        <img class="article-img" src="images/neighborhood_map.png" alt="map" data-toggle="modal" data-target="#project1"/>
+                    </div>
+
+                    <div class="article-bttns">
+                        <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">Demo</a>
+                        <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">GitHub</a>
+                    </div>
+                </article>
+
+                <article>
+                    <h4 class="article-title">
+                        Arcade Game Clone
+                    </h4>
+                    <div class="article-text">
+                        <p>OOP, HTML5 Canvas</p>
+                        <p>
+                            In this project I used OOP skills to recreate a classic arcade game. In addition to the basic functionality, I implemented player selection, score and a number of lives to make the game more interactive.
+                        </p>
+                        <p>
+                            2017
+                        </p>
+                    </div>
+                    <div class="article-img-holder">
+                        <img class="article-img" src="images/frogger_cropped.png" alt="frogger game" data-toggle="modal" data-target="#project1"/>
+                    </div>
+
+                    <div class="article-bttns">
+                        <a class="btn btn-info" href="https://sakela17.github.io/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">Demo</a>
+                        <a class="btn btn-info" href="https://github.com/Sakela17/frontend-nanodegree-neighborhood-map/" role="button" target="_blank">GitHub</a>
+                    </div>
+                </article>
             </div>
         </section>
         <!---End Main Section-->
 
-        <div class="row bottom-hr-line">
-            <div class="col-xs-12">
-                <hr class="">
-            </div>
-        </div>
+        <!--<div class="row bottom-hr-line">-->
+            <!--<div class="col-xs-12">-->
+                <!--<hr class="">-->
+            <!--</div>-->
+        <!--</div>-->
         <!---End Horizontal Line-->
 
         <footer class="row">
-            <!--<p class="col-xs-12">Image for this page designed by-->
-                <!--<a href="http://www.freepik.com/free-vector/great-isometric-user-experience_851898.htm" title="Freepik" target="_blank">-->
-                    <!--Freepik</a></p>-->
-
-            <!--<p class="col-xs-12">Image for 'Responsive Design' project designed by-->
-                <!--<a href="http://www.freepik.com/free-vector/responsive-web-design-flat-graphics_717976.htm"-->
-                <!--title="Freepik" target="_blank">-->
-                    <!--Freepik</a></p>-->
-
-            <!--<p class="col-xs-12">Image for 'Portfolio' project designed by-->
-                <!--<a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>-->
-                <!--from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a>-->
-                <!--is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">-->
-                <!--CC 3.0 BY</a></p>-->
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/marina-valiquette/" class="" target="_blank">LINKEDIN</a>
+                </li>
+                <li>
+                    <a href="mailto:marina.valiquette@gmail.com" class="" target="_blank">EMAIL</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Sakela17" class="" target="_blank">GITHUB</a>
+                </li>
+            </ul>
         </footer>
         <!---End Footer-->
 

@@ -1,8 +1,11 @@
 .container-fluid {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #2d3c49;
     padding-right: 0;
     padding-left: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 .row {
     margin: 0;
@@ -10,14 +13,25 @@
 
 #main, .page-header-wrapper,
 .bottom-hr-line {
-    max-width: 55em;
-    margin: 0 auto;
+    /*max-width: 55em;*/
+    /*margin: 0 auto;*/
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* === HEADER === */
 
 .page-header-wrapper {
-    height: 30vh;
+    height: 40vh;
     /*min-height: 275px;*/
     background: #000000;
     background-image: url("../images/sakelari4_opt.jpg");
@@ -26,34 +40,33 @@
     background-position: left center;
     /*background-size: 772px 276px;*/
     /*text-align: left;*/
-
 }
 
 #banner-area {
     padding: 35px 20px 0 0;
     float: right;
     margin: 0 auto;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.2px;*/
+
 }
 
 #banner-area > * {
     margin: auto;
     color: white;
-
 }
 
 h1 {
-    font-size: 20px;
-    /*text-shadow: 1px 1px 1px #FFFDE8;*/
-    /*font-weight: 300;*/
-
+    font-size: calc(.7rem + 3vw);
 }
 
-h3 {
-    font-size: 15px;
+h2 {
+    font-size: calc(.7rem + 2vw);
     padding-top: 1%;
     /*text-shadow: 1px 1px 1px #FFFDE8;*/
     text-align: right;
     /*margin: auto;*/
+    text-transform: lowercase;
 }
 /*#banner-area {*/
     /*display: flex;*/
@@ -67,6 +80,14 @@ h3 {
     /*justify-content: center; !* Optional, to align inner flex-items*/
                               /*horizontally within the column  *!*/
 /*}*/
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
 
 .main-section-img {
 
@@ -92,20 +113,102 @@ h3 {
 
 
 #main-header {
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: calc(.7rem + 1.8vw);
+
     padding-top: 2%;
     padding-bottom: 1%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     /*color: #7d97ad;*/
 }
 
 #main-header-bar {
-    margin: 2% 45% 5% 45%;
+    margin: 0 auto;
+
+    /*margin: 2% 45% 5% 45%;*/
+    /*width: calc(.7rem + 9vw);*/
     width: 10%;
-    height: 3px;
+    /*width: calc(.7rem + 9vw);*/
+    height: calc(.1rem + .1vw);
     background: #2d3c49;
+}
+
+
+article {
+    position: relative;
+    margin: 15px 0 40px 0;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px groove rgba(0, 0, 0, 0.2);
+    padding: 1em;
+}
+
+article > * {
+    /*flex-basis: 100%;*/
+    flex: 1 100%;
+}
+
+.article-title {
+    flex: none;
+    position: absolute;
+    /*right: -10px;*/
+    top: calc((.7rem + .8vw)*-0.5 - 2px);
+    right: 1em;
+    margin: 0;
+    /*top: calc((.7rem + .8vw)*-1.5);*/
+    color: #ee164e;
+    /*margin: calc((.7rem + .8vw)*-1.5) 0 0 auto;*/
+    padding: 0 .5em;
+    background: #fff;
+    /*font-size: 1em;*/
+    font-weight: normal;
+    font-size: calc(.7rem + .8vw);
+}
+
+.article-img-holder {
+    /*flex: 1 100%;*/
+    /*height: 50%;*/
+    display: flex;
+    align-content: center;
+
+}
+
+.article-img {
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*object-fit: cover;*/
+    /*width: calc(95.0vw - 20px);*/
+    /*height: calc(95.0vw - 10px);*/
+    /*height: 80%;*/
+    align-self: center;
+}
+
+.article-text {
+    font-family: Lato;
+    font-size: calc(.7rem + .9vw);
+    font-weight: 300;
+    line-height: 1.8em;
+
+}
+
+.article-text p:first-of-type {
+    font-style: italic;
+}
+
+.article-bttns {
+    position: absolute;
+    bottom: calc((.7rem + .8vw)*-0.9);
+    flex: none;
+    color: #ee164e;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    margin: 0 auto;
+    padding: 0 .5em;
+    background: #fff;
+    /*font-size: 1em;*/
+    font-weight: normal;
 }
 
 #gallery {
@@ -145,7 +248,7 @@ h3 {
 }
 
 .gallery-img-caption {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
     font-weight: 500;
     text-transform: uppercase;
     margin: 0;
@@ -156,9 +259,42 @@ h3 {
 }
 
 .btn {
+    color: #2d3c49;
     border-radius: 0;
-    border: 0;
+    border: 1px solid #ee164e;
+    margin: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: calc(.7rem + .8vw);
+
+    /*font-size: 14px;*/
+    /*font-weight: 400;*/
+    /*line-height: 1.42857143;*/
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: linear-gradient(#ee164e, #ee164e);
+    background-repeat: no-repeat;
+    transition: background-size .5s, color .5s;
+    /* Fill to right */
+    background-position: 0 50%;
+    background-size: 0 100%;
+
 }
+
+.btn:hover {
+    background-size: 100% 100%;
+    color: #fff;
+}
+
 
 .gallery-bar {
     margin: 3% 45% 3% 45%;
@@ -176,14 +312,48 @@ h3 {
  /* === FOOTER === */
 
 footer {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    height: 10vw;
     font-size: 0.9rem;
     margin-bottom: 1.2%;
+    background: #000000;
 }
 
 footer p {
     margin: auto;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 100%;
+    list-style-type: none;
+    color: white;
+
+}
+
+ul li {
+    align-self: center;
+    color: white;
+
+    /*display: inline-block;*/
+}
+
+ul a {
+    color: white;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+ul a:hover {
+    color: #ee164e;
+    /*transform: translate3d(0px, 0%, 0px);*/
+    /*transition: background-size .5s, color .5s;*/
+}
 
 /* === HORIZONTAL LINES === */
 
@@ -203,16 +373,42 @@ footer p {
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 600px) {
+    /*article { flex: 2 0px; }*/
+    /*.article-test {*/
+        /*flex: 1 0px;*/
+        /*order: 3;*/
+    /*}*/
+    article {
+        flex-wrap: nowrap;
+    }
+
+    .article-img-holder {
+        width: 30%;
+        flex: 1 auto;
+        order: 1;
+    }
+
+    .article-text {
+        margin-left: 5%;
+        width: 70%;
+        flex: 2 auto;
+        order: 2;
+    }
+
+    .article-bttns {
+        right: 10em;
+
+    }
     .page-header-wrapper {
         background-image: url("../images/sakelari4_opt.jpg");
     }
 
     h1 {
-        font-size: 30px;
+        /*font-size: 30px;*/
     }
 
     h3 {
-        font-size: 20px;
+        /*font-size: 20px;*/
     }
 }
 
@@ -239,7 +435,7 @@ footer p {
     }
 
     .header {
-        font-size: 3rem;
+        /*font-size: 3rem;*/
         /*text-align: center;*/
         /*padding-left: 25px;*/
     }
@@ -248,8 +444,13 @@ footer p {
         /*height: 220px;*/
     }
 
+    .article-bttns {
+        right: 15em;
+
+    }
+
     footer {
-        font-size: 1.1rem;
+        /*font-size: 1.1rem;*/
     }
 
     .top-hr-line, .bottom-hr-line {
@@ -300,7 +501,7 @@ footer p {
     }
 
     footer {
-        font-size: 1.3rem;
+        /*font-size: 1.3rem;*/
     }
 }
 
