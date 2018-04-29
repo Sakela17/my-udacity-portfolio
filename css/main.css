@@ -142,7 +142,7 @@ article {
     display: flex;
     flex-flow: row wrap;
     border: 1px groove rgba(0, 0, 0, 0.2);
-    padding: 1em;
+    padding: 1em 1em 2em 1em;
 }
 
 article > * {
@@ -153,7 +153,6 @@ article > * {
 .article-title {
     flex: none;
     position: absolute;
-    /*right: -10px;*/
     top: calc((.7rem + .8vw)*-0.5 - 2px);
     right: 1em;
     margin: 0;
@@ -199,13 +198,14 @@ article > * {
 
 .article-bttns {
     position: absolute;
-    bottom: calc((.7rem + .8vw)*-0.9);
+    bottom: calc((.7rem + .8vw)*-1.2);
     flex: none;
     color: #ee164e;
     text-transform: uppercase;
     letter-spacing: 0.2px;
-    margin: 0 auto;
-    padding: 0 .5em;
+    /*margin: 0 auto;*/
+    padding: 5px;
+    /*padding: 0 .5em;*/
     background: #fff;
     /*font-size: 1em;*/
     font-weight: normal;
@@ -262,10 +262,10 @@ article > * {
     color: #2d3c49;
     border-radius: 0;
     border: 1px solid #ee164e;
-    margin: 5px;
+    /*margin: 5px;*/
     display: inline-block;
     padding: 6px 12px;
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
     font-size: calc(.7rem + .8vw);
 
     /*font-size: 14px;*/
@@ -290,11 +290,19 @@ article > * {
 
 }
 
+
 .btn:hover {
     background-size: 100% 100%;
     color: #fff;
 }
 
+.btn-play {
+    margin-right: 5px;
+}
+
+.btn-link {
+    margin-left: 5px;
+}
 
 .gallery-bar {
     margin: 3% 45% 3% 45%;
@@ -332,18 +340,21 @@ ul {
     height: 100%;
     list-style-type: none;
     color: white;
-
+    padding: 0;
 }
 
 ul li {
     align-self: center;
     color: white;
+    letter-spacing: 0.6px;
+
 
     /*display: inline-block;*/
 }
 
 ul a {
     color: white;
+    font-size: calc(.7rem + .8vw);
     transition: color 0.3s linear;
     -webkit-transition: color 0.3s linear;
     -moz-transition: color 0.3s linear;
@@ -380,6 +391,7 @@ ul a:hover {
     /*}*/
     article {
         flex-wrap: nowrap;
+        padding: 1em;
     }
 
     .article-img-holder {
@@ -396,8 +408,7 @@ ul a:hover {
     }
 
     .article-bttns {
-        right: 10em;
-
+        left: calc(50% - 84px);
     }
     .page-header-wrapper {
         background-image: url("../images/sakelari4_opt.jpg");
@@ -445,7 +456,7 @@ ul a:hover {
     }
 
     .article-bttns {
-        right: 15em;
+        /*right: 15em;*/
 
     }
 
