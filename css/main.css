@@ -149,7 +149,7 @@ article > * {
     user-select: none;
     background-image: linear-gradient(#ee164e, #ee164e);
     background-repeat: no-repeat;
-    transition: background-size .5s, color .5s;
+    transition: background-size .3s, color .3s;
     /* Fill to right */
     background-position: 0 50%;
     background-size: 0 100%;
@@ -212,30 +212,18 @@ ul li {
     align-self: center;
     color: white;
     letter-spacing: 0.6px;
-
-
-    /*display: inline-block;*/
 }
 
 ul a {
     color: white;
     font-size: calc(.7rem + .8vw);
-    transition: color 0.3s linear;
+    /*transition: color 0.2s linear;*/
 }
 
 ul a:hover {
-    color: #ee164e;
-    /*transform: translate3d(0px, 0%, 0px);*/
-    /*transition: background-size .5s, color .5s;*/
+    text-decoration: underline;
+    /*color: #ee164e;*/
 }
-
-/* === HORIZONTAL LINES === */
-
-/*.top-hr-line {*/
-    /*border: 1px solid #7d97ad;*/
-    /*min-height: 0;*/
-    /*margin: 2% 0 2% 0;*/
-/*}*/
 
 .bottom-hr-line hr:only-child {
     border: 1px solid #2d3c49;
@@ -243,15 +231,9 @@ ul a:hover {
     margin: 2% 0 0.5% 0;
 }
 
-
 /* === MEDIA QUERIES === */
 
 @media screen and (min-width: 600px) {
-    /*article { flex: 2 0px; }*/
-    /*.article-test {*/
-        /*flex: 1 0px;*/
-        /*order: 3;*/
-    /*}*/
     article {
         flex-wrap: nowrap;
         padding: 1em;
@@ -276,55 +258,11 @@ ul a:hover {
     .page-header-wrapper {
         background-image: url("../images/sakelari4_opt.jpg");
     }
-
-    h1 {
-        /*font-size: 30px;*/
-    }
-
-    h3 {
-        /*font-size: 20px;*/
-    }
 }
 
 @media screen and (min-width: 768px) {
-    h1 {
-        /*font-size: 4rem;*/
-    }
-
-    h3 {
-        /*font-size: 1.4rem;*/
-    }
-
-    /*.img-logo {*/
-        /*max-height: 55px;*/
-        /*padding-bottom: 3%;*/
-    /*}*/
-
-    /*.main-section-img {*/
-        /*max-height: 300px;*/
-    /*}*/
-
     .gallery-card-holder {
         width: calc((100% - 30px)/3);
-    }
-
-    .header {
-        /*font-size: 3rem;*/
-        /*text-align: center;*/
-        /*padding-left: 25px;*/
-    }
-
-    .gallery-img {
-        /*height: 220px;*/
-    }
-
-    .article-bttns {
-        /*right: 15em;*/
-
-    }
-
-    footer {
-        /*font-size: 1.1rem;*/
     }
 
     .top-hr-line, .bottom-hr-line {
@@ -333,25 +271,9 @@ ul a:hover {
 }
 
 @media screen and (min-width: 992px) {
-    h1 {
-        /*font-size: 4.5rem;*/
-    }
-
-    h3 {
-        /*font-size: 1.6rem;*/
-    }
-
     .img-logo {
         max-height: 60px;
         padding-bottom: 2%;
-    }
-
-    .gallery-img-caption {
-        /*font-size: 2.2rem;*/
-    }
-
-    .gallery-img {
-        /*height: 300px;*/
     }
 }
 
@@ -365,39 +287,18 @@ ul a:hover {
         min-width: 100%;
         object-fit: cover;
     }
-
-    .gallery-img {
-        /*height: 450px;*/
-    }
-
-    .gallery-img-caption {
-        /*font-size: 3rem;*/
-    }
-
-    footer {
-        /*font-size: 1.3rem;*/
-    }
 }
 
 @media print and (orientation: portrait) {
     .gallery-card-holder {
         width: 100%;
     }
-
 }
 
 
 @media print and (orientation: landscape) {
     html, body {
         height: 100%;
-    }
-
-    h1 {
-        /*font-size: 4.5rem;*/
-    }
-
-    h3 {
-        /*font-size: 1.6rem;*/
     }
 
     main + .row, footer  {
@@ -417,5 +318,4 @@ ul a:hover {
     .gallery-card-holder {
         width: 33.33333333%;
     }
-
 }
