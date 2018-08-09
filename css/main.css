@@ -118,6 +118,19 @@ article > * {
     font-style: italic;
 }
 
+.article-text p:last-of-type {
+    font-style: italic;
+}
+
+.article-text a {
+    color: #ee164e;
+}
+
+.article-text a:hover,
+.article-text a:focus {
+    text-decoration: underline;
+}
+
 .article-bttns {
     position: absolute;
     bottom: calc((.7rem + .8vw)*-1.2);
@@ -215,13 +228,40 @@ ul li {
 }
 
 ul a {
+    position: relative;
     color: white;
     font-size: calc(.7rem + .8vw);
+    transition: all 0.2s linear;
     /*transition: color 0.2s linear;*/
 }
 
-ul a:hover {
-    text-decoration: underline;
+ul a:before,
+ul a:after {
+    position: absolute;
+
+    content: "";
+    background: white;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s linear;
+}
+
+ul a:before {
+    top: 0;
+    left: 0;
+}
+
+ul a:after {
+    top: 100%;
+    right: 0;
+}
+
+ul a:hover:before,
+ul a:hover:after,
+ul a:focus:before,
+ul a:focus:after {
+    width: 100%;
+    /*text-decoration: underline;*/
     /*color: #ee164e;*/
 }
 
