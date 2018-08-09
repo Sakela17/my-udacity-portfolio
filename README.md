@@ -1,3 +1,3 @@
-[Portfolio](https://valsakel.github.io/portfolio) - my personal portfolio.
+[Portfolio](https://mvaliquette.surge.sh) - my personal portfolio.
 ============================
-If interested, click [here](https://valsakel.github.io/portfolio) to learn more about me and my work.
+If interested, click [here](https://mvaliquette.surge.sh) to learn more about me and my work.
