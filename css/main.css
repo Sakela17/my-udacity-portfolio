@@ -116,14 +116,15 @@ article > * {
 .article-title {
     flex: none;
     position: absolute;
-    top: calc((.7rem + .8vw)*-0.5 - 2px);
-    right: 1em;
+    top: calc((.7rem + 1.5vw)*-0.5 - 2px);
+    left: 1em;
+    /*right: 1em;*/
     margin: 0;
     color: #ee164e;
     padding: 0 .5em;
     background: #fff;
     font-weight: normal;
-    font-size: calc(.7rem + .8vw);
+    font-size: calc(.7rem + 1.5vw);
 }
 
 .article-img-holder {
@@ -164,6 +165,7 @@ article > * {
 .article-bttns {
     position: absolute;
     bottom: calc((.7rem + .8vw)*-1.2);
+    right: 1em;
     flex: none;
     color: #ee164e;
     text-transform: uppercase;
@@ -440,6 +442,7 @@ ul a:focus:after {
     article {
         flex-wrap: nowrap;
         padding: 1em;
+        margin: 25px 0 55px 0;
     }
 
     .article-img-holder {
@@ -456,7 +459,8 @@ ul a:focus:after {
     }
 
     .article-bttns {
-        left: calc(50% - 84px);
+        /*left: calc(50% - 84px);*/
+        right: calc(50% - 84px);
     }
 
     .header-wrapper {
