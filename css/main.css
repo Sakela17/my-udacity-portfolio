@@ -35,7 +35,7 @@ img {
     text-align: right;
     color: #e7e6e6;
     background: #020202;
-    background-image: url("../images/sakelari4_opt.jpg");
+    background-image: url("../images/sakelari4_400.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
@@ -366,7 +366,7 @@ footer a:focus {
 
     .header-wrapper {
         height: 40vh;
-        background-image: url("../images/sakelari4_opt.jpg");
+        background-image: url("../images/sakelari4_600.jpg");
     }
 
 }
